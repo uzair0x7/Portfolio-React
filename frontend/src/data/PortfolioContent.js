@@ -9,7 +9,7 @@ export const PortfolioContent = {
     title: "Passionate about creating",
     titleHighlight: "digital experiences",
     paragraphs: [
-      "I'm a Full Stack Developer with a passion for building elegant, responsive, and user-friendly web applications. With over 4 years of experience, I've worked on various projects ranging from startup MVPs to enterprise-level applications.",
+      "I'm a second year honors student at the University of Georgia majoring in Management Information Systems. I have a passion for building elegant, responsive, and user-friendly web applications. With over 2 years of experience, I've worked on various projects including startups and applications.",
       "My approach combines clean code with beautiful design, ensuring that every project I work on is both functional and visually appealing. I believe in continuous learning and staying up-to-date with the latest technologies.",
     ],
     stats: [

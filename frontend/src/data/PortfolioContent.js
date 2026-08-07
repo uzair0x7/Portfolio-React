@@ -3,6 +3,8 @@ import Project2 from "../assets/images/Auth.png";
 import Project3 from "../assets/images/block.jpg";
 import Project4 from "../assets/images/ecom.jpg";
 import Project5 from "../assets/images/portfolio.png";
+import Project6 from "../assets/images/doctor.png";
+
 export const PortfolioContent = {
   about: {
     tag: "About Me",
@@ -228,9 +230,8 @@ export const PortfolioContent = {
         category: "fullstack",
         tags: ["React.js", "Css3", "Node.js", "LocalStorage", "Express.js"],
         liveUrl: "https://api-tester-v2-0-frontend.vercel.app",
-        githubUrl: "https://github.com/npm-335i/Api-Tester-v2.0",
+        githubUrl: "https://github.com/uzair0x7/Api-Tester-v2.0",
       },
-
       {
         id: 2,
         title: "Auth System MERN",
@@ -241,7 +242,7 @@ export const PortfolioContent = {
         category: "fullstack",
         tags: ["React", "Node.js", "MongoDB", "JWT", "Authentication"],
         liveUrl: "https://auth-system-frontend-six.vercel.app/auth",
-        githubUrl: "https://github.com/npm-335i/Auth-System-MERN",
+        githubUrl: "https://github.com/uzair0x7/Auth-System-MERN",
       },
       {
         id: 3,
@@ -259,8 +260,8 @@ export const PortfolioContent = {
           "Theme",
           "Animations",
         ],
-        liveUrl: "",
-        githubUrl: "https://github.com/npm-335i/MediCart-Frontend",
+        liveUrl: "https://ecomerce-store-frontend.vercel.app",
+        githubUrl: "",
       },
       {
         id: 4,
@@ -279,7 +280,7 @@ export const PortfolioContent = {
           "Animations",
         ],
         liveUrl: "https://portfolio-react-git-main-npm-335is-projects.vercel.app",
-        githubUrl: "https://github.com/npm-335i/Portfolio-React",
+        githubUrl: "https://github.com/uzair0x7/Portfolio-React",
       },
       {
         id: 5,
@@ -291,7 +292,19 @@ export const PortfolioContent = {
         category: "other",
         tags: ["Batch Scripting", "Hosts File", "Productivity"],
         liveUrl: "",
-        githubUrl: "https://github.com/npm-335i/Site-Blocker-Batch-Project",
+        githubUrl: "https://github.com/uzair0x7/Site-Blocker-Batch-Project",
+      },
+      {
+        id: 6,
+        title: "Doctor Portfolio",
+        description:
+          "Professional portfolio website for doctors with appointment booking, patient testimonials, and medical services showcase",
+        imageUrl: Project6,
+        emoji: "👨‍⚕️",
+        category: "frontend",
+        tags: ["React", "EmailJS", "Framer Motion", "Responsive"],
+        liveUrl: "https://doctor-portfolio-five-beta.vercel.app",
+        githubUrl: "",
       },
     ],
   },
@@ -322,7 +335,7 @@ export const PortfolioContent = {
       {
         name: "GitHub",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-        url: "https://github.com/npm-335i",
+        url: "https://github.com/uzair0x7",
       },
       {
         name: "LinkedIn",

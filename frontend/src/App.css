@@ -242,3 +242,8 @@ body {
     background-size: 30px 15px;
   }
 }
+
+
+.modal-overlay{
+  z-index: 999;
+}

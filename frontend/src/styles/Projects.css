@@ -1,7 +1,9 @@
 .projects {
   padding: 100px 24px;
-
+  padding-bottom: 150px; 
   position: relative;
+  z-index: 10;
+  background: #06060e;
 }
 
 .projects-container {
@@ -66,6 +68,8 @@
   overflow: hidden;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -74,96 +78,12 @@
 }
 
 .project-image {
-  font-size: 64px;
-  padding: 40px 24px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, rgba(186, 128, 255, 0.05), transparent);
-}
-
-.project-content {
-  padding: 20px 24px 24px;
-}
-
-.project-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 8px;
-}
-
-.project-description {
-  color: var(--text-secondary);
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 16px;
-}
-
-.project-tags {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-
-.project-tag {
-  padding: 4px 12px;
-  border-radius: 50px;
-  background: rgba(186, 128, 255, 0.06);
-  color: var(--text-secondary);
-  font-size: 12px;
-  border: 1px solid rgba(186, 128, 255, 0.05);
-}
-
-.project-link {
-  background: transparent;
-  border: none;
-  color: var(--accent);
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 0;
-  transition: all 0.3s ease;
-}
-
-.project-link:hover {
-  transform: translateX(4px);
-  color: #9d6bff;
-}
-
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .projects-filters {
-    gap: 8px;
-  }
-
-  .filter-btn {
-    padding: 6px 16px;
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  .projects {
-    padding: 60px 16px;
-  }
-
-  .project-image {
-    font-size: 48px;
-    padding: 30px 16px 16px;
-  }
-}
-
-.project-image {
   width: 100%;
   height: 220px;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(186, 128, 255, 0.05), transparent);
   position: relative;
+  flex-shrink: 0;
 }
 
 .project-img {
@@ -187,15 +107,66 @@
   background: linear-gradient(135deg, rgba(186, 128, 255, 0.05), transparent);
 }
 
-.project-img::after {
-  content: "📁";
+.project-content {
+  padding: 20px 24px 24px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  position: absolute;
-  inset: 0;
-  background: rgba(6, 6, 14, 0.8);
+  flex-direction: column;
+  flex-grow: 1;
+ 
+  position: relative; 
+  z-index: 10;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.project-tag {
+  padding: 4px 12px;
+  border-radius: 50px;
+  background: rgba(186, 128, 255, 0.06);
+  color: var(--text-secondary);
+  font-size: 12px;
+  border: 1px solid rgba(186, 128, 255, 0.05);
+}
+
+.project-link {
+  background: rgba(186, 128, 255, 0.1);
+  border: 1px solid rgba(186, 128, 255, 0.2);
+  border-radius: 8px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 16px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.project-link:hover {
+  background: rgba(186, 128, 255, 0.2);
+  transform: translateY(-2px);
+  color: #9d6bff;
 }
 
 .modal-overlay {
@@ -204,7 +175,7 @@
   background: rgba(6, 6, 14, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  z-index: 9999;
+  z-index: 999999; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,18 +196,7 @@
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
-  animation: modalFadeIn 0.3s ease;
-}
-
-@keyframes modalFadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9) translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
+ 
 }
 
 .modal-close {
@@ -403,6 +363,21 @@
 }
 
 @media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .projects-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+
   .modal-content {
     max-width: 100%;
     margin: 10px;
@@ -431,6 +406,16 @@
 }
 
 @media (max-width: 480px) {
+  .projects {
+    padding: 60px 16px;
+    padding-bottom: 120px;
+  }
+
+  .project-image {
+    font-size: 48px;
+    padding: 30px 16px 16px;
+  }
+
   .modal-image {
     height: 120px;
   }

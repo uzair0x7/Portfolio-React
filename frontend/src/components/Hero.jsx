@@ -308,7 +308,12 @@ export default function Hero() {
               </Canvas>
             ) : (
               <div className="avatar-placeholder">
-                <div className="placeholder-icon">👨‍💻</div>
+
+                <img 
+                  src={hero.avatar} 
+                  alt="Uzair's Avatar" 
+                  className="avatar-static-img" 
+                />
               </div>
             )}
 

@@ -8,6 +8,7 @@ import ReactBasicCert from "../assets/images/certifications/react_basic.jpg";
 import JsBasicCert from "../assets/images/certifications/javascript_basic.jpg";
 import JsInterCert from "../assets/images/certifications/javascript_inter.jpg";
 import NodeBasicCert from "../assets/images/certifications/node_basic.jpg";
+import FrontendCert from "../assets/images/certifications/frontend_cert.jpg";
 import Avatar from "../assets/images/avatar.png";
 
 export const PortfolioContent = {
@@ -400,8 +401,19 @@ export const PortfolioContent = {
           "Covers basic JavaScript concepts such as variables, data types, functions, and control flow.",
         link: "https://www.hackerrank.com/certificates/65632d909cb2",
       },
+
       {
         id: 3,
+        title: "Node (Basic) Certificate",
+        issuer: "HackerRank",
+        logoUrl: "https://cdn.simpleicons.org/hackerrank/2EC866",
+        imageUrl: NodeBasicCert,
+        description:
+          "Validates fundamental Node.js skills, including modules, file system, and basic server creation.",
+        link: "https://www.hackerrank.com/certificates/a284db3400d6",
+      },
+      {
+        id: 4,
         title: "JavaScript (Intermediate) Certificate",
         issuer: "HackerRank",
         logoUrl: "https://cdn.simpleicons.org/hackerrank/2EC866",
@@ -411,14 +423,14 @@ export const PortfolioContent = {
         link: "https://www.hackerrank.com/certificates/6fb0a4608492",
       },
       {
-        id: 4,
-        title: "Node (Basic) Certificate",
+        id: 5,
+        title: "Frontend Developer (React) Certificate",
         issuer: "HackerRank",
         logoUrl: "https://cdn.simpleicons.org/hackerrank/2EC866",
-        imageUrl: NodeBasicCert,
+        imageUrl: FrontendCert,
         description:
-          "Validates fundamental Node.js skills, including modules, file system, and basic server creation.",
-        link: "https://www.hackerrank.com/certificates/a284db3400d6",
+          "HackerRank-certified in frontend development with hands-on skills in React, JavaScript, and CSS.",
+        link: "https://www.hackerrank.com/certificates/0c3026f45db6",
       },
     ],
   },
